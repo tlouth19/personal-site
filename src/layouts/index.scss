@@ -1,0 +1,143 @@
+$headerHeight: 1.8em;
+$borderRadius: .25rem;
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: #ffffff;
+  font-size: 14px;
+  font-family: monospace;
+  line-height: 1.3em;
+  padding: 3rem;
+  /* 
+   * Thanks to https://codepen.io/addyosmani/pen/avxmvN for the terminal inspiration :D
+  */
+  .code {
+    max-width: 42em;
+    width: 100%;
+    margin: auto;
+    border-radius: 3px;
+    height: auto;
+    box-shadow: 0 0 9px 0 rgba(0,0,0,.13);
+    transition: opacity .3s ease-in;
+    &.code-full-screen {
+      width: 100vw;
+      height: 100vh;
+      max-width: none;
+      margin: 0;
+      transform: none !important;
+      .code-terminal {
+        height: calc(100vh - 1.6rem);
+      }
+    }
+    &-terminal {
+      background-color: #000000;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto;
+      padding: .4em;
+      color: #ffffff;
+      overflow: auto;
+      border-bottom-left-radius: $borderRadius;
+      border-bottom-right-radius: $borderRadius;
+      min-height: 280px;
+      ::selection {
+        background: rgba(179, 216, 253, 1); 
+      }
+      ::-moz-selection {
+        background: rgba(179, 216, 253, 1);
+      }
+      .code-line {
+        .code-placeholder {
+          height: .6rem;
+          width: .4em;
+          display: inline-block;
+          margin-left: .2em;
+          background: #ededed;
+        }
+        .code-typer {
+          display: inline;
+          word-break: break-word;
+          color: #a1acdc;
+          * {
+            word-break: break-all;
+          }
+          a {
+            color: rgba(31, 158, 35, 1)
+          }
+        }
+        &-error {
+          .code-typer {
+            color: rgba(199, 30, 10, 1);
+          }
+        }
+      }
+    }
+    &-header {
+      width: 100%;
+      box-sizing: border-box;
+      height: $headerHeight;
+      background-color: #bbb;
+      margin: 0 auto;
+      @extend .flex;
+      @extend .align-center;
+      padding: 0 .5em;
+      display: flex;
+      align-items: center;
+      border-top-left-radius: $borderRadius;
+      border-top-right-radius: $borderRadius;
+      font-family: sans-serif;
+      cursor: default;
+      &-center {
+        flex: auto;
+        text-align: center;
+         @extend .truncate;
+      }
+      .code-btn-wrap {
+        @extend .flex;
+        @extend .align-center;
+        .code-btn {
+            height: 1.15em;
+            width: 1.15em;
+            border-radius: 50%;
+            border: 1px solid #000;
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            margin-right: .5em;  
+            &.green {
+              background: #00d742;
+              border-color: #049931;
+            }
+            &.red {
+              background: #ff3b47;
+              border-color: #9d252b;
+            }
+            &.yellow {
+              background: #ffc100;
+              border-color: #9d802c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
