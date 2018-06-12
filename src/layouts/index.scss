@@ -1,6 +1,10 @@
 $offWhite: #f4f7f6;
 $white: #ffffff;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -16,7 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh; 
-  min-height: 300px;
+  min-height: 420px;
   padding: 0 3rem;
   a {
     text-decoration: none;
@@ -26,7 +30,7 @@ body {
     position: relative;
     text-align: center;
     margin: 3rem 0;
-    max-width: 24rem;
+    max-width: 28rem;
     padding: 0 3rem 3rem 3rem;
     border-radius: .2rem;
     animation: border-radius 1s linear forwards .4s;
@@ -45,6 +49,7 @@ body {
       animation: fade-in 1s linear forwards .8s;
       a {
         color: darken($offWhite, 40%);
+        display: inline-block;
       }
     }
     &:before {
@@ -68,7 +73,8 @@ body {
       align-items: center;
       justify-content: center;
       position: relative;
-      padding-top: 1rem;
+      padding-top: 2rem;
+
       &:before {
         content: '';
         position: absolute;
@@ -82,7 +88,7 @@ body {
         background: darken($offWhite, 20%);
       }
       a {
-        margin: .25rem;
+        margin: 0 .45rem;
         opacity: 0;
         cursor: pointer;
         display: flex;
