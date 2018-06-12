@@ -1,76 +1,46 @@
 import React from 'react'
+import twitter from './media/twitter.svg'
+import instagram from './media/instagram.svg'
+import github from './media/github.svg'
+import mail from './media/mail.svg'
+import phone from './media/phone.svg' 
+import linkedin from './media/linkedin.svg'
 
-export const TYPIST_DEFAULTS = {
-  show: true,
-  blink: false,
-  element: <div className="code-placeholder" />,
-  hideWhenDone: true,
-  hideWhenDoneDelay: 100
-}
-
-export const CODE_LINES = [
+export const icons = [
   {
-    text: 'Hello! 😄',
+    key: 'github',
+    label: 'GitHub',
+    to: 'https://github.com/tlouth19',
+    icon: github
   },
   {
-    text: `I'm Tyson, a full-stack developer based in Toronto, Canada.`,
+    key: 'instagram',
+    label: 'Instagram',
+    to: 'https://instagram.com/tlouth19',
+    icon: instagram
   },
   {
-    text:
-      'My interests are mostly in front-end tools, especially React and Vue. 🔥🔥',
+    key: 'twitter',
+    label: 'Twitter',
+    to: 'https://twitter.com/louther18',
+    icon: twitter
   },
   {
-    text: `I'm currently the Lead Front-End Developer at BitCine Technologies.`,
+    key: 'mail',
+    label: 'Email',
+    to: 'mailto:tysonlouth@gmail.com',
+    icon: mail
   },
   {
-    text: 'How to find me:',
+    key: 'phone',
+    label: 'phone',
+    to: 'tel:705-345-7775',
+    icon: phone
   },
   {
-    text: (
-      <a
-        target="_blank"
-        title="Email me"
-        rel="nofollow noreferrer"
-        href="mailto:tysonlouth@gmail.com"
-      >
-        tysonlouth@gmail.com
-      </a>
-    ),
-  },
-  {
-    text: (
-      <a
-        target="_blank"
-        title="Visit my Github page"
-        rel="nofollow noreferrer"
-        href="https://github.com/tlouth19"
-      >
-        github.com/tlouth19
-      </a>
-    ),
-  },
-  {
-    text: (
-      <a
-        target="_blank"
-        title="Visit my LinkedIn page"
-        rel="nofollow noreferrer"
-        href="https://ca.linkedin.com/in/tyson-louth-816b6aa9"
-      >
-        linkedin.com/tyson-louth
-      </a>
-    ),
-  },
-  {
-    text: (
-      <a
-        target="_blank"
-        title="Visit my Twitter page"
-        rel="nofollow noreferrer"
-        href="https://twitter.com/louther18?lang=en"
-      >
-        twitter.com/louther18
-      </a>
-    ),
-  },
+    key: 'linkedin',
+    label: 'LinkedIn',
+    to: 'https://ca.linkedin.com/in/tyson-louth-816b6aa9',
+    icon: linkedin
+  }
 ]

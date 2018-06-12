@@ -1,8 +1,5 @@
 import React from 'react'
-import Terminal from '../components/terminal'
 
-const NotFoundPage = () => (
-  <Terminal codeLines={[{ text: 'Whoops! 404 Error.', error: true }]} />
-)
+const NotFoundPage = () => '404 :('
 
 export default NotFoundPage
