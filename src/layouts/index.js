@@ -9,8 +9,9 @@ const Layout = ({ children, data }) => (
       title='Tyson Louth'
       meta={[
         { name: 'description', content: 'The personal website of Tyson Louth.' }
-      ]}
-    />
+      ]}>
+      <html lang="en" />
+    </Helmet>
     {children()}
   </div>
 )

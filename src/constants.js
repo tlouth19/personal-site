@@ -12,6 +12,12 @@ export const icons = [
     label: 'GitHub',
     to: 'https://github.com/tlouth19',
     icon: github
+  },  
+  {
+    key: 'linkedin',
+    label: 'LinkedIn',
+    to: 'https://ca.linkedin.com/in/tyson-louth-816b6aa9',
+    icon: linkedin
   },
   {
     key: 'instagram',
@@ -30,17 +36,5 @@ export const icons = [
     label: 'Email',
     to: 'mailto:tysonlouth@gmail.com',
     icon: mail
-  },
-  {
-    key: 'phone',
-    label: 'phone',
-    to: 'tel:705-345-7775',
-    icon: phone
-  },
-  {
-    key: 'linkedin',
-    label: 'LinkedIn',
-    to: 'https://ca.linkedin.com/in/tyson-louth-816b6aa9',
-    icon: linkedin
   }
 ]
