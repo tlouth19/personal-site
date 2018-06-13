@@ -38,6 +38,13 @@ module.exports = {
 	        windows: false
 	      }
 	    }
-	  }
+	  },
+	  {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-120787737-1",
+        head: false
+      },
+    }
   ],
 }

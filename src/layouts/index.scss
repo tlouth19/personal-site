@@ -23,6 +23,7 @@ body {
   min-height: 420px;
   padding: 0 1rem;
   color: #333333;
+  line-height: 1.4rem;
   a {
     text-decoration: none;
     color: #333333;
@@ -36,6 +37,7 @@ body {
     padding: 0 2rem 2rem 2rem;
     border-radius: .2rem;
     animation: border-radius 1s linear forwards .4s;
+    box-shadow: 0 0 9px 0 rgba(0,0,0,.13);
     h1, strong, p {
       opacity: 0;
       transform: translateY(.5rem);
@@ -69,6 +71,7 @@ body {
       opacity: 0;
       transform: scale(0.8);
       animation: card .8s linear forwards .1s;
+      box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.73);
     }
     .icons {
       display: flex;

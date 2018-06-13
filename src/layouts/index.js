@@ -6,10 +6,14 @@ import './index.scss'
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
-      title='Tyson Louth'
+      title="Tyson Louth"
       meta={[
-        { name: 'description', content: 'The personal website of Tyson Louth.' }
-      ]}>
+        {
+          name: 'description',
+          content: 'The personal website of Tyson Louth.',
+        },
+      ]}
+    >
       <html lang="en" />
     </Helmet>
     {children()}
@@ -21,4 +25,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
