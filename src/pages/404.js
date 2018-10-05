@@ -1,5 +1,6 @@
 import React from 'react'
+import Layout from '../layouts/'
 
-const NotFoundPage = () => <div>404 :(</div>
+const NotFoundPage = () => <Layout>404 :(</Layout>
 
 export default NotFoundPage

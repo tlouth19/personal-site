@@ -5,8 +5,7 @@ module.exports = {
     description: `The personal website of Tyson Louth.`
   },
   plugins: [
-  	'gatsby-plugin-react-helmet', 
-  	'gatsby-plugin-sass',
+  	'gatsby-plugin-react-helmet',
   	'gatsby-plugin-sitemap',
   	{
 	    resolve: `gatsby-plugin-manifest`,
@@ -20,6 +19,12 @@ module.exports = {
 	      icon: "src/favicon.png"
 	    },
 	  },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
+      },
+    },
 	  'gatsby-plugin-offline',
   	{
 	    resolve: `gatsby-plugin-favicon`,

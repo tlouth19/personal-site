@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import './index.scss'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -16,7 +15,7 @@ const Layout = ({ children, data }) => (
     >
       <html lang="en" />
     </Helmet>
-    {children()}
+    {children}
   </div>
 )
 
