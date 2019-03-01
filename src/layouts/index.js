@@ -1,22 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import { injectGlobal } from 'emotion'
+import styled from 'react-emotion'
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title="Tyson Louth"
-      meta={[
-        {
-          name: 'description',
-          content: 'The personal website of Tyson Louth.',
-        },
-      ]}
-    >
-      <html lang="en" />
-    </Helmet>
+injectGlobal`
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+`
+
+const Body = styled('main')`
+  height: 100vh;
+  width: 100vw;
+  background: #5fbc5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+const Layout = ({ children }) => (
+  <Body>
     {children}
-  </div>
+  </Body>
 )
 
 Layout.propTypes = {
