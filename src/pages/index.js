@@ -7,29 +7,7 @@ const IndexPage = () => (
       <h1>Tyson Louth</h1>
       <strong>Full Stack Developer</strong>
       <p>
-        Currently the Lead Front End Developer at BitCine Technologies,
-        building&nbsp;
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://cinesend.com/"
-        >
-          CineSend
-        </a>,&nbsp;
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.festily.com/"
-        >
-          Festily
-        </a>&nbsp;&amp;&nbsp;
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://piracydetector.com/"
-        >
-          Piracy Detector
-        </a>.
+        Software developer at Teaching.com.<br/>I work remote from Orillia, Ontario!
       </p>
       <div className="icons">
         {icons.map((icon, index) => (
