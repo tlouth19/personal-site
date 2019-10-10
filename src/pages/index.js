@@ -5,7 +5,7 @@ const IndexPage = () => (
   <div className="wrap flex items-center justify-center">
     <div className="card">
       <h1>Tyson Louth</h1>
-      <strong>Full Stack Developer</strong>
+      <strong>Front End Developer</strong>
       <p>
         Software developer at Teaching.com.<br/>I work remote from Orillia, Ontario!
       </p>
